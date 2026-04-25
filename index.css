@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #1E3A8A; /* Deep Blue (Strong) */
+  --color-secondary: #3B82F6; /* Bright Blue (Cheerful) */
+  --color-accent: #F59E0B; /* Amber (Joyful) */
+  --color-accent-soft: #FEF3C7; /* Soft Amber */
+  --color-surface: #F8FAFC; /* Slate-50 background */
+  --color-text-main: #1E293B; /* Slate-800 */
+}
+
+body {
+  direction: rtl;
+  @apply font-sans bg-surface text-text-main antialiased;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-primary { color: var(--color-primary); }
+.bg-primary { background-color: var(--color-primary); }
+.border-primary { border-color: var(--color-primary); }
+
+.text-secondary { color: var(--color-secondary); }
+.bg-secondary { background-color: var(--color-secondary); }
+
+.text-accent { color: var(--color-accent); }
+.bg-accent { background-color: var(--color-accent); }
